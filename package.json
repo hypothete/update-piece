@@ -1,0 +1,14 @@
+{
+  "name": "update-piece",
+  "version": "0.0.1",
+  "description": "A JS project that depends on all npm dependencies",
+  "main": "index.js",
+  "scripts": {
+    "update": "node index.js"
+  },
+  "author": "Duncan Alexander <duncan@hypothete.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "all-the-package-names": "^1.3905.0"
+  }
+}
