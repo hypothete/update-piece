@@ -1,6 +1,6 @@
 name: Node.js CI
 
-on: [push]
+on: [workflow_dispatch]
 
 jobs:
   build:
@@ -16,6 +16,11 @@ jobs:
         node-version: '13.x'
     - run: npm i -D
     - run: npm run build
-    - run: npm i
+    - name: Commit report
+      run: |
+        git config --global user.name 'hypothete'
+        git config --global user.email 'hypothete@users.noreply.github.com'
+        git commit -am "Updated dependencies"
+        git push
       env:
         CI: true
