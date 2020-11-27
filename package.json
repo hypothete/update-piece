@@ -4,7 +4,7 @@
   "description": "A JS project that depends on all npm dependencies",
   "main": "index.js",
   "scripts": {
-    "update": "node index.js"
+    "build": "node index.js"
   },
   "author": "Duncan Alexander <duncan@hypothete.com>",
   "license": "MIT",
